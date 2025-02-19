@@ -7,3 +7,7 @@ The problem stemmed from using the # symbol in the siteName parameter. This char
 
 Solution: Properly Encode URL
 To resolve the issue, I encoded the # symbol as %23 in the URL. This way, the browser sends the entire parameter correctly.
+
+old url=http://localhost:8080/myfleet/download?turbineSN=299137_false&downloadType=excel&startYear=2023&startMonth=Aug&endYear=2025&endMonth=Jan&hoursFlag=Y&startsFlag=Y&siteName=HACHINOHE%20#5&mndFlag=Y&ucFlag=Y&mwhFlag=Y&contractNumber=CS26171
+
+correct url=http://localhost:8080/myfleet/download?turbineSN=299137_false&downloadType=excel&startYear=2023&startMonth=Aug&endYear=2025&endMonth=Jan&hoursFlag=Y&startsFlag=Y&siteName=HACHINOHE%20%235&mndFlag=Y&ucFlag=Y&mwhFlag=Y&contractNumber=CS26171
